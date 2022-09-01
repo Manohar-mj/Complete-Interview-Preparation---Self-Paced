@@ -1,0 +1,28 @@
+static void follPatt(String s)
+    {
+      int count = 0,res=1;
+      for(int i=0;i<s.length();i++){
+          
+          if(s.charAt(i)=='x'){
+              if(count!=0 && s.charAt(i-1)=='y'){
+                  res=0;
+                  break;
+              }
+              count++;
+          }
+              
+             
+          if(s.charAt(i)=='y'){
+             if(count==0){
+                 res=0;
+                 break;
+             }
+             count--;
+          }
+      }
+      if(count>0){
+          res=0;
+      }
+       
+      System.out.println(res);
+    }
