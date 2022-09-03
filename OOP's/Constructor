@@ -1,0 +1,8 @@
+// code here
+
+class User{
+    String name;
+    public User(){
+        this.name="Default";
+    }
+}
