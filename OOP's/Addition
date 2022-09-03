@@ -1,0 +1,11 @@
+// create a class addition
+// with a static function add
+// this should return the sum of
+// two values(a,b) passed in the parameter
+class Addition{
+    int a,b;
+    public static int add(int a,int b){
+        return a+b;
+    }
+}
+// code here
