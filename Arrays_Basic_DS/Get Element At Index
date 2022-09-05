@@ -1,0 +1,17 @@
+class Get
+{
+    public static int getByIndex(int arr[], int n, int i)
+    {
+        //approch 2
+        if(n>i){
+            return arr[i];
+        }
+        
+        return -1;
+        // Your code here
+        // if (i>=n){
+        //     return -1;
+        // }
+        // return arr[i];
+    }
+}
