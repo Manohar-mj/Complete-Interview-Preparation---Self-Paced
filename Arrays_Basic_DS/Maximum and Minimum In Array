@@ -1,0 +1,17 @@
+class Get
+{
+    public static int maximumElement(int arr[],int n)
+    {
+      
+        return Arrays.stream(arr).max().getAsInt();
+    
+    }
+    
+    public static int minimumElement(int arr[],int n)
+    {
+        // YOUR code here
+        
+        return Arrays.stream(arr).min().getAsInt();
+    }
+}
+
