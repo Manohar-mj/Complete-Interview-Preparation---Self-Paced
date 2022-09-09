@@ -1,0 +1,29 @@
+class Solution
+{
+    //Complete the function
+    public static int isSorted(int arr[], int n)
+    {
+       /// Your code here
+       int count1=0;
+       int count2=0;
+       
+       for(int i=1;i<n;i++){
+           if(arr[i-1]<=arr[i]){
+               count1++;
+           }
+       }
+       
+       
+       for(int i=1;i<n;i++){
+           if(arr[i-1]>=arr[i]){
+               count2++;
+           }
+       }
+       
+       if(count1==n-1 || count2==n-1){
+           return 1;
+       }else{
+           return 0;
+       }
+    }
+}
