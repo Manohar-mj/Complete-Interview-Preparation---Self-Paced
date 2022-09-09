@@ -1,0 +1,14 @@
+class UpdateArray
+{
+    // Complete the function
+    // arr[]: input array
+    // index: input  index
+    // element: element to be updated
+    public static void updateArray(int arr[], int index, int element)
+    {
+        // Update the element at index
+      
+            arr[index]=arr[element];
+        
+    }
+}
