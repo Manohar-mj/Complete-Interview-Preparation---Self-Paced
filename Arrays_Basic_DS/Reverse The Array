@@ -1,0 +1,18 @@
+
+class Get {
+    public static void reverseArray(int arr[], int n) {
+        // Your code here
+        int h=n-1;
+        int l=0;
+        
+        for(int i=1;i<n;i++){
+            int t=0;
+            t=arr[l];
+            arr[l]=arr[h];
+            arr[h]=t;
+            l++;
+            h--;
+        }
+    }
+}
+
