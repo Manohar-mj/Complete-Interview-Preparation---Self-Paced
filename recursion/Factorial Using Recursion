@@ -1,0 +1,14 @@
+//User function Template for Java
+
+class Solution
+{
+    // complete the function
+    // N: input element
+    static int factorial(int N)
+    {
+        // find and return the factorial of N
+        if(N==0)
+            return 1;
+        return N*factorial(N-1);
+    }
+}
