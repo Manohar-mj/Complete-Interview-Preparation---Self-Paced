@@ -1,0 +1,14 @@
+
+class Solution
+{
+    // Complete the function
+    // a: first number
+    // b: second number
+    public static int GCD(int a, int b)
+    {
+        // find and return GCD of two numbers;
+        if(a%b==0)
+            return b;
+        return GCD(b,a%b);
+    }
+}
