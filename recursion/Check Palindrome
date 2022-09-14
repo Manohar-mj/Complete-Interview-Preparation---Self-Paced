@@ -1,0 +1,22 @@
+
+class Solution{
+    private:
+     bool fun(string &s,int start,int end){
+        if(start>=end)    
+            return true;
+        if(s[start] !=s[end]){
+            return false;
+        }
+        fun(s,start+1,end-1);
+    }
+  public:
+    bool isPalin(int N)
+    {
+        //Your code here
+        //You may use a helper function if you like
+        string s=to_string(N);
+        return fun(s,0,s.length()-1);
+        
+        
+    }
+};
