@@ -1,0 +1,7 @@
+int theSequence(int N)
+{
+    //Your code hereif
+    if(N==0)
+        return 1;
+    return N+N*(theSequence(N-1));
+}
