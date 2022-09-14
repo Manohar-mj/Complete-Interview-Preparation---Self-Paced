@@ -1,0 +1,12 @@
+class Get
+{
+    public static int nCr(int n,int r)
+    {
+        // your code here
+        if(n==0 || r==0)
+            return 1;
+        else
+            return nCr(n-1,r-1)+nCr(n-1,r);
+        
+    }
+}
