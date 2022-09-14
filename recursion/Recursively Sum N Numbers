@@ -1,0 +1,12 @@
+class Solution
+{
+    // Complete the function
+    // N: input element
+    public static int recursiveSum(int N)
+    {
+        // recursively sum from 1 to N
+        if(N==0)
+            return 0;
+        return N+recursiveSum(N-1);
+    }
+}
